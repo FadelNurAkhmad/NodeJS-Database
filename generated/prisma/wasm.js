@@ -129,6 +129,19 @@ exports.Prisma.CustomerScalarFieldEnum = {
   phone: 'phone'
 };
 
+exports.Prisma.ProductScalarFieldEnum = {
+  id: 'id',
+  name: 'name',
+  price: 'price',
+  stock: 'stock',
+  category: 'category'
+};
+
+exports.Prisma.CategoryScalarFieldEnum = {
+  id: 'id',
+  name: 'name'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -146,10 +159,22 @@ exports.Prisma.CustomerOrderByRelevanceFieldEnum = {
   phone: 'phone'
 };
 
+exports.Prisma.ProductOrderByRelevanceFieldEnum = {
+  id: 'id',
+  name: 'name',
+  category: 'category'
+};
+
+exports.Prisma.CategoryOrderByRelevanceFieldEnum = {
+  name: 'name'
+};
+
 
 exports.Prisma.ModelName = {
   sample: 'sample',
-  Customer: 'Customer'
+  Customer: 'Customer',
+  Product: 'Product',
+  Category: 'Category'
 };
 
 /**
