@@ -129,6 +129,13 @@ exports.Prisma.CustomerScalarFieldEnum = {
   phone: 'phone'
 };
 
+exports.Prisma.CommentScalarFieldEnum = {
+  id: 'id',
+  title: 'title',
+  description: 'description',
+  customer_id: 'customer_id'
+};
+
 exports.Prisma.WalletScalarFieldEnum = {
   id: 'id',
   balance: 'balance',
@@ -165,6 +172,17 @@ exports.Prisma.CustomerOrderByRelevanceFieldEnum = {
   phone: 'phone'
 };
 
+exports.Prisma.NullsOrder = {
+  first: 'first',
+  last: 'last'
+};
+
+exports.Prisma.CommentOrderByRelevanceFieldEnum = {
+  title: 'title',
+  description: 'description',
+  customer_id: 'customer_id'
+};
+
 exports.Prisma.WalletOrderByRelevanceFieldEnum = {
   id: 'id',
   customer_id: 'customer_id'
@@ -184,6 +202,7 @@ exports.Prisma.CategoryOrderByRelevanceFieldEnum = {
 exports.Prisma.ModelName = {
   sample: 'sample',
   Customer: 'Customer',
+  Comment: 'Comment',
   Wallet: 'Wallet',
   Product: 'Product',
   Category: 'Category'
