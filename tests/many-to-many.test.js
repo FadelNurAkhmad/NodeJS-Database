@@ -59,6 +59,7 @@ describe("Prisma Client", function () {
   });
 
   it("should create implicit relation", async () => {
+    // bisa pakai update or insert
     const customer = await prismaClient.customer.update({
       where: {
         id: "parjo",
@@ -89,7 +90,7 @@ describe("Prisma Client", function () {
         loves: {
           some: {
             name: {
-              contains: "A",
+              contains: "A", // terdapat product A
             },
           },
         },

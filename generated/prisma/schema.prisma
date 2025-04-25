@@ -15,8 +15,9 @@ datasource db {
 }
 
 model sample {
-  id   String @id
-  name String
+  id          String  @id @db.VarChar(100)
+  name        String  @db.VarChar(100)
+  description String? @db.Text
 }
 
 model Customer {
